@@ -1,0 +1,393 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="{% static 'blog/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-5">
+          <img src="{% static 'blog/img/shariar_profile2.jpg' %}">
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-dark text-white">
+              <div class="name d-flex flex-row justify-content-between align-items-center">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h1 class="display-4 p-1">Md. Al Shariar</h1>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    
+                      <div class="col-3"><a class="text-white" href=""><i class="fa fa-twitter"></i></a></div>
+                      <div class="col-3"><a class="text-white" href="https://www.facebook.com/shariar58"><i class="fa fa-facebook"></i></a></div>
+                      <div class="col-3"><a class="text-white" href="https://www.instagram.com/shariar0/"><i class="fa fa-instagram"></i></a></div>
+                      <div class="col-3"><a class="text-white" href="https://github.com/Shariarbup"><i class="fa fa-github"></i></a></div>
+                    
+                  </div>
+                </div>
+                
+                
+
+              </div>
+            </div>
+
+            <div class="p-4 bg-black">
+              Full Stack Web Developer
+            </div>
+
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                  <i class="fa fa-home d-block"></i> Home
+                </div>
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                  <i class="fa fa-folder-open d-block"></i> Resume
+                </div>
+                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                  <i class="fa fa-graduation-cap d-block"></i>Education                   
+                </div>
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                  <i class="fa fa-envelope d-block"></i> Contact
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Welcome to my web page</h2>
+        <p class="lead text-justify">AssalamuAlaikum( May Allah peace be upon you ).
+          I am Md. Al Shariar, and i have completed my B.Sc.(Hon's) in Information and Communicatio Engineering
+          in Bangladesh University Of Professionals(BUP).
+          This is a portfolio website for showing my skill.</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>My Skills</h3>
+        <p>
+          Experience in developing python django web application, 
+          java desktop application and Android game using java. I have good knowledge about Data Structure 
+          and Algorithm using python and version controlling using git and github.
+        </p>
+        <hr>
+        <h4>Python</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>Python Django Framework</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>Python Data Structure & Algorithm</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>Version Controllig ( Git & Github )</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>HTML</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>CSS</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h4>JavaScript( Vanila Javascript )</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:90%"></div>
+        </div>
+        <h4>Jquery</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:80%"></div>
+        </div>
+        <h4>Java</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:80%"></div>
+        </div>
+        <h4>C / C++</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:70%"></div>
+        </div>
+        <h4>Adobe Photoshop, Premier Pro, Microsoft Power point</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:50%"></div>
+        </div>
+        <h4>Others ( Matlab, Prolog )</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:70%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME -->
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>My Resume</h2>
+        <p class="text-justify">Willing to work in a workplace where I can take over the responsibilities with fosters my skills, experience along with my academic
+           background that add value and make a difference in the organization.</p>
+      </div>
+      <div class="card card-body  py-5">
+        <h2>My Project</h2>
+        <p class="text-justify">
+          •	BdExpress ( E-commerce site) :
+          An e-commerce website which is developed using python django framework(back-end) and html, css, bootstrap(front-end).
+          <a href="https://github.com/Shariarbup/Shariar_Python_django_project/tree/master/bdexpress">github link</a>
+           
+
+        </p>
+        <p class="text-justify">
+          •	BD LifeHackerz ( A personal blog site):
+          A personal blog site which is developed using python django framework( back-end), and html,css,bootstrap(front-end).
+          <a href="https://github.com/Shariarbup/Shariar_Python_django_project/tree/master/blog">github link</a>
+           
+
+        </p>
+        <p class="text-justify">
+          •	Shariar’s Flying Fish ( Android Game):
+          It is a android game, which is developed using java.
+          <a href="https://github.com/Shariarbup/Shariar_Android_Project/tree/master/ShariarFish">github link</a>
+          
+          
+
+        </p>
+        <p class="text-justify">
+          •	 UI Desigin ( Boi Bikri):
+          It is an ui design for an e-commerce website which is developed using html,css,bootstrap and javascript.
+          <a href=" https://github.com/Shariarbup/Shariar_Web_Page_Design/tree/master/Final%20Boi%20Bikri%20verson-1.1">github link</a>
+          
+         
+
+        </p>
+        <p class="text-justify">
+          •	UI Desigin ( IEEE BUP SB):
+          It is an ui design for BUP IEEE SB official website which is developed using html,css,bootstrap and javascript.
+          <a href="https://github.com/Shariarbup/Shariar_Web_Page_Design/tree/master/final-ieee/src">github link</a>
+          
+          
+
+        </p>
+        <p class="text-justify">
+          •	UI Desigin ( Full Website Template):
+          It is an ui design for BUP IEEE SB official website which is developed using html,css,bootstrap and javascript.
+          <a href="https://github.com/Shariarbup/Shariar_Web_Page_Design/tree/master/full%20website%20one">github link</a>
+          
+
+        </p>
+        <p class="text-justify">
+          •	UI Desigin ( Student Management System):
+          It is an ui design for BUP IEEE SB official website which is developed using html,css,bootstrap and javascript.
+          <a href="https://github.com/Shariarbup/Shariar_Web_Page_Design/tree/master/Hackathone%20Final">github link</a> 
+
+        </p>
+        
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Where have I worked?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis eligendi, ex officia itaque tempora natus.</p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">BUP Robotics Club</h4>
+              <p class="card-text text-justify">
+                BUPRC (BUP Robotics Club) was founded by a group 
+                of enthusiastic undergraduate students of department of Information and 
+                Communication Technology of BUP on September 13, 2017. BUP Robotics Club 
+                is one of the elite clubs of BUP organized with a view to developing latest 
+                talent of young minds 
+                regarding innovative research in the field of science and technology.
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Position: General member
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Phone: N/A
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2017 - 2019</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">BUP Infotech Club</h4>
+              <p class="card-text text-justify">
+                BUPITC (Bangladesh University of Professionals 
+                Information Technology Club) is one of the leading 
+                clubs of BUP formed at the end of 2017 but started its 
+                journey from 14th February 2018 under the Department of 
+                Information and Communication Technology. The club has organized 
+                technical workshops and seminars where talented professionals in 
+                different technical topics talks on versatile technologies, such as competitive 
+                programming, software frameworks, trending programming languages.
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Position: General member
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Phone: N/A
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2017 - 2019</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">BUP IEEE Student Branch</h4>
+              <p class="card-text text-justify">
+                IEEE BUP Student Branch falls under the IEEE Bangladesh 
+                Section of IEEE Region 10 (Asia Pacific Region). 
+                IEEE BUP Student Branch under Department of ICT, 
+                FST is the 34th Student Branch in Bangladesh which was approved on 6th August 2017.
+                At present the branch has more than 100 active members.
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Position: General member
+              </p>
+              <p class="p-2 mb-3 bg-dark text-white">
+                Phone: N/A
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">Dates: 2018 - 2019</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <div id="work" class="collapse">
+      <div class="card card-body bg-warning py-5">
+        <h3>My Education Qualification</h3>
+        <p></p>
+      </div>
+      <div class="card card-body  py-5">
+        <h3>B.Sc(Hon's)</h3>
+        <p>
+          Information and Communication Engineering (ICE) <br>
+          BANGLADESH UNIVERSITY OF PROFESSIONALS<br>
+          CGPA: 3.64<br>
+          Passing Year: 2019<br>
+
+        </p>
+      </div>
+      <div class="card card-body  py-5">
+        <h3>HSC</h3>
+        <p>
+          HIGHER SECONDARY CERTIFICATE (HSC) <br>
+          BOGURA CANTONMENT PUBLIC SCHOOL AND COLLEGE, BOGURA<br>
+          Science<br>
+          GPA: 5<br>
+          Passing Year: 2014
+        </p>
+      </div>
+
+      <div class="card card-body  py-5">
+        <h3>SSC</h3>
+        <p>
+          SECONDARY SCHOOL CERTIFICATE (SSC) <br>
+          BOGURA CANTONMENT BOARD HIGH SCHOOL, BOGURA<br>
+          Science<br>
+          GPA: 5<br>
+          Passing Year: 2012
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="collapse">
+      <div class="card card-body bg-danger text-white py-5">
+        <h2>Contact</h2>
+        <p>
+          MD. AL SHARIAR  <br>
+          R: 811, Projonmo, Nirjhor Residential Area, Dhaka Cantonment	 <br>
+          Phone: +8801968385155<br>
+          Email: itmasjoy@gmail.com<br>
+          <a class="text-white" href=" https://www.linkedin.com/in/al-shariar-595893163/ "> https://www.linkedin.com/in/al-shariar-595893163/ </a><br>
+
+
+        </p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Get in touch</h3>
+        <p>Feel free to contact with me for any problem.</p>
+        <form>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-danger text-white">
+                <i class="fa fa-user"></i>
+              </span>
+              <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-danger text-white">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-danger text-white">
+                <i class="fa fa-pencil"></i>
+              </span>
+              <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download Resume</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'blog/js/jquery.min.js' %}"></script>
+  <script src="{% static 'blog/js/popper.min.js' %}"></script>
+  <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+  <script>
+    $('.port-item').click(function(){
+      $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+</html>
