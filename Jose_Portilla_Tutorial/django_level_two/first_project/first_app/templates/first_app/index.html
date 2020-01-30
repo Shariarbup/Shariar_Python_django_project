@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,5 +9,23 @@
 </head>
 <body>
     <h1>Hi this my webpage. </h1>
+
+    {% if acc_record %}
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+        </tr>
+        {% for acc in acc_record %}
+        <tr>
+            <td>{{ acc.name }}</td>
+            <td>{{ acc.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>There is no record in the web page</p>
+    {% endif %}
 </body>
 </html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+
+{% block body %}
+    <h1>Other page.</h1>
+    <br>
+   <h1> {{ num | add:"99" }} </h1> <br>
+   <h1>{{ text | cut:'world'}}</h1>
+{% endblock %}
