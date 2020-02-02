@@ -1,0 +1,18 @@
+
+{% extends 'basic_app/base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+    
+    <form action="{% url 'basic_app:user_login' %}" method="POST">
+        {% csrf_token %}
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+        <label for="password">Password: </label>
+        <input type="password" name="password">
+        <input type="submit" value="LogIn">
+    </form>
+ 
+{% endblock%}
+
+
+

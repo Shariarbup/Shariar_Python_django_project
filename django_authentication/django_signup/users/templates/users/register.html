@@ -1,0 +1,14 @@
+{% extends "basic_app/base.html" %}
+{% block content %}
+    <form  method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend >Join Today</legend>
+            {{ form.as_p }}
+        </fieldset>
+        <input type="submit" value="Sign Up">
+    </form>
+    <small class="text-muted">
+        Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+    </small>
+{% endblock content %}

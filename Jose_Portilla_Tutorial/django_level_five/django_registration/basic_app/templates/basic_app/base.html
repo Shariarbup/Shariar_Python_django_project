@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'basic_app:home' %}">Home</a> | <a href="{% url 'basic_app:register' %}">Sign Up</a>  | <a href="{% url 'admin:index' %}">Admin</a>
+    |
+    {% if user.is_authenticated %}
+    
+    <a href="{% url 'basic_app:logout'%}">Logout</a>
+    |
+    {% else %}
+
+    <a href="{% url 'basic_app:user_login'%}">LogIn</a>
+
+    {% endif %}
+    {% block body_block %}
+
+    {% endblock %}
+
+</body>
+</html>
